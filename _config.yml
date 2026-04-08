@@ -2,6 +2,8 @@ title: Home Server & AI Hub
 description: Guides on self-hosting, local AI, and home automation
 theme: jekyll-theme-midnight
 author: Gerry
+github:
+  is_project_page: false
 
 plugins:
   - jekyll-feed
