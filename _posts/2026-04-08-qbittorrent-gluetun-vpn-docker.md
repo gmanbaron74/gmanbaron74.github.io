@@ -366,4 +366,4 @@ Happy downloading.
 
 ---
 
-**Word Count: 2,100+**
+
