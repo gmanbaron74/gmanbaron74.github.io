@@ -30,33 +30,34 @@ Before we get to specific models, let's talk about what you actually need:
 
 ---
 
-## Best Overall: Beelink SER5 Pro
+## Best Overall: Beelink ME Mini
 
 **Specs:**
-- CPU: AMD Ryzen 5 5500 (6 cores, 12 threads)
-- RAM: 16GB DDR4 (upgradeable to 32GB)
-- Storage: 512GB NVMe SSD (upgradeable)
-- GPU: Integrated Radeon Graphics
-- Power: 15W idle, ~45W under load
-- Size: 195 × 185 × 75mm
+- CPU: Intel N150 (6 cores, 8 threads)
+- RAM: 16GB DDR5 (upgradeable)
+- Storage: 6 × M.2 NVMe slots (up to 6TB total internal)
+- Networking: Dual 2.5GbE Ethernet
+- GPU: Intel UHD Graphics
+- Power: 10W idle, ~35W under load
+- Size: 150 × 130 × 50mm (compact)
 
-**Price:** £280-320 (check [Beelink on Amazon UK](https://www.amazon.co.uk/s?k=Beelink+SER5+Pro&tag=baronvonhag0c-21))
+**Price:** Starting at £165 (check [Beelink ME Mini on Amazon UK](https://www.amazon.co.uk/s?k=Beelink+ME+Mini&tag=baronvonhag0c-21))
 
 **Why It's the Best:**
 
-The SER5 Pro is the workhorse of home servers. I've had one running continuously for two years now. It's genuinely quiet, uses almost no power at idle, and the Ryzen 5 5500 has enough grunt to handle multiple Docker containers, Plex transcoding, and Home Assistant without breaking a sweat.
+The ME Mini is specifically engineered for home servers and NAS tasks, not repurposed as a general-purpose mini PC. Six M.2 NVMe slots mean you can build internal redundancy (RAID configurations) without external drive enclosures. Dual 2.5GbE networking gives you serious throughput for media streaming and backups. The Intel N150 is efficient and capable enough for Plex, Navidrome, Home Assistant, and containerized workloads.
 
-The design is practical: you get one M.2 NVMe slot for the OS, room for a 2.5" SATA drive for additional storage, and access to the RAM without needing specialized tools. Upgrading from 16GB to 32GB takes about five minutes.
+This is the sweet spot for 2026: purpose-built for your use case, expandable without external clutter, and at a price point that makes sense. The ME Mini doesn't overprovision CPU power you don't need (unlike general-purpose mini PCs), and it doesn't undershoot storage like single-drive machines.
 
-Beelink's customer support is solid (I've had one DOA unit replaced without hassle), and the community is large enough that if you hit a problem, someone on Reddit or their forums has already solved it.
+Dual gigabit networking is a genuine advantage. If you're streaming multiple 4K files simultaneously or backing up large libraries, those dual ports matter more than raw CPU cores.
 
 **Real-World Performance:**
 
-I run Plex, Navidrome, Gluetun + qBittorrent, Netdata, and several other containers on my SER5 Pro. Full CPU load during Plex transcoding sits around 50-60%. Idle power draw is about 12W. During a typical day—mostly idle, occasional transcoding—it pulls about 0.3 kWh.
+With 6 M.2 slots, you can configure this as a proper NAS: one drive for OS, two for media library in RAID 1 (redundancy), and the rest for backups or secondary services. Idle power is excellent at 10W. The N150 handles Plex transcoding fine for 1-3 simultaneous streams without breaking a sweat.
 
 **Setup Notes:**
 
-Works great with ZimaOS, Ubuntu Server, and standard Linux distributions. Docker runs smoothly. I'd recommend using Ubuntu 22.04 LTS or ZimaOS if you want a pre-configured media server environment.
+Works excellently with ZimaOS (which recognizes multiple drive bays out of the box) and Ubuntu Server. The dual Ethernet is automatically bridgeable for failover or load balancing if you ever need it. Native Docker support is smooth.
 
 ---
 
@@ -210,7 +211,7 @@ docker-compose up -d
 
 ## Final Recommendations
 
-**Pick the Beelink SER5 Pro if:** You want the best balance of performance, reliability, and upgradability. It's my top recommendation and the safest bet.
+**Pick the Beelink ME Mini if:** You want a NAS-first machine with built-in redundancy and don't need raw CPU power. Dual ethernet and 6 M.2 slots make this the clear winner for home servers. It's my top recommendation for 2026.
 
 **Pick the MINISFORUM HM90 if:** You're budget-conscious and don't mind slower support. Same guts as the Beelink, lower price.
 
@@ -226,7 +227,7 @@ Here's what you're actually spending per year:
 
 | Model | Purchase | Electricity (£/year) | Total Year 1 |
 |-------|----------|----------------------|-------------|
-| Beelink SER5 Pro | £300 | £8 | £308 |
+| Beelink ME Mini | £165 | £4 | £169 |
 | MINISFORUM HM90 | £240 | £7 | £247 |
 | CHUWI GemiBook | £200 | £3 | £203 |
 | MINISFORUM H31G | £500 | £15 | £515 |
