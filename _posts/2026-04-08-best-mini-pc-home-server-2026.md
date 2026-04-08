@@ -51,9 +51,15 @@ This is the sweet spot for 2026: purpose-built for your use case, expandable wit
 
 Dual gigabit networking is a genuine advantage. If you're streaming multiple 4K files simultaneously or backing up large libraries, those dual ports matter more than raw CPU cores.
 
-**Real-World Performance:**
+**Real-World Performance & Setup Cost:**
 
-With 6 M.2 slots, you can configure this as a proper NAS: one drive for OS, two for media library in RAID 1 (redundancy), and the rest for backups or secondary services. Idle power is excellent at 10W. The N150 handles Plex transcoding fine for 1-3 simultaneous streams without breaking a sweat.
+With 6 M.2 slots, you can configure this as a proper NAS:
+- 1× 512GB NVMe for OS (budget: £30-40)
+- 2× 2TB NVMe in RAID 1 for media library (budget: £60-80 each = £120-160)
+- 2× 2TB NVMe for backups (budget: £60-80 each = £120-160)
+- **Total setup: ME Mini (£165) + drives (£270-360) = £435-525 for a fully redundant media server**
+
+Idle power is excellent at 10W. The N150 handles Plex transcoding fine for 1-3 simultaneous streams without breaking a sweat.
 
 **Setup Notes:**
 
