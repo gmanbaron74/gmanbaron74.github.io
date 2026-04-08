@@ -1,6 +1,6 @@
 title: Home Server & AI Hub
 description: Guides on self-hosting, local AI, and home automation
-theme: minima
+theme: jekyll-theme-midnight
 author: Gerry
 
 plugins:
