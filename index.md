@@ -1,11 +1,9 @@
 ---
-layout: default
+layout: post
 title: Home Server & AI Hub
 ---
 
-# Home Server & AI Hub
-
-Guides on self-hosting, local AI, and home automation.
+Welcome to my blog about self-hosting, local AI, and home automation.
 
 ---
 
