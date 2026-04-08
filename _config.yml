@@ -1,0 +1,8 @@
+title: Home Server & AI Hub
+description: Guides on self-hosting, local AI, and home automation
+theme: minima
+author: Gerry
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
