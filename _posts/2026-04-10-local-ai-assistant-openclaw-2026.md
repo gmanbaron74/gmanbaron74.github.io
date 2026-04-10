@@ -6,7 +6,7 @@ The era of relying on massive, opaque cloud APIs for every bit of digital assist
 
 This guide will walk you through the architecture required to deploy an intelligent hub—an "AI Assistant"—that can run complex tasks, manage local services, and interact with your smart home stack, all without sending a single query outside your firewall. We're not just talking about running a chat interface; we’re building autonomous capability.
 
-### The Architectural Shift: From Cloud Dependency to Local Sovereignty (SEO Header 1)
+### The Architectural Shift: From Cloud Dependency to Local Sovereignty
 
 Before diving into the code, it is critical to understand *why* this shift matters. When you use an external AI service, your prompts, usage patterns, and sometimes even attached data leave your premises. For anyone treating their home network as a private domain—and if you run Plex or Navidrome, you already are—this is unacceptable risk.
 
@@ -20,10 +20,7 @@ To achieve this robust local setup, you'll need a few components. Think of these
 *   **AI Engine:** Ollama running in its own isolated Docker container, managing various models (Llama 3, Mistral, etc.).
 *   **Orchestrator/Agent Layer:** OpenClaw, acting as the primary agent framework, which will interact with local APIs via scripts or direct service calls.
 
-*(Affiliate Note: If you need to upgrade your server hardware, checking out high-quality Mini PCs on Amazon UK can be a good starting point for browsing compatible systems. [Amazon Link Placeholder for NUC/Beelink])*
-
-### Step 1: Establishing the AI Backbone with Ollama and Open WebUI (Actionable Setup)
-
+*
 The easiest way to get an LLM running locally is via **Ollama**. It manages downloading and running quantized models efficiently. We pair this with a frontend like Open WebUI for a friendly chat interface, but we need more than just chatting—we need *action*.
 
 **1. Install Ollama:**
@@ -70,7 +67,7 @@ docker ps --format "table {{.Names}}\t{{.Status}}" | head -n 2
 ```
 This provides the LLM with factual, real-time data it can reason over *before* generating a response, leading to accurate execution.
 
-### Step 3: Advanced Automation Workflow: The AI Assistant Loop (SEO Header 2)
+### Step 3: Advanced Automation Workflow: The AI Assistant Loop
 
 To make this an "AI Assistant," we need a continuous loop of observation $\rightarrow$ reasoning $\rightarrow$ action.
 
@@ -92,7 +89,7 @@ cron add { "name": "daily-assistant-check", "schedule": {"kind": "cron", "expr":
 
 This job will inject a system event into the main session at the specified time, prompting the LLM agent to perform its routine maintenance check and report back on any significant changes—this is how true background intelligence operates.
 
-### Conclusion: Beyond Chatbots (SEO Header 3)
+### Conclusion: Beyond Chatbots
 
 Building this local AI assistant isn't just about running `ollama run mistral`. It’s an exercise in system integration, container orchestration, and understanding data provenance. By anchoring your workflows around frameworks like OpenClaw, you build resilience that cloud services can never promise: self-sufficiency. You gain not just answers, but *control* over the process of generating those answers.
 
