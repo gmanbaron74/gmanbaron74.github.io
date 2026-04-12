@@ -366,4 +366,12 @@ Stop renting your home from the cloud. Build it yourself.
 - Cloud-dependent setup: ~$15–30/month (Home Assistant Cloud, Plex Pass, etc.)
 - Self-hosted setup: ~$0.50/month (electricity)
 
+
+## Amazon UK Hardware Links
+
+- [Beelink ME Mini (Intel N150, 12GB, 6x M.2)](https://www.amazon.co.uk/dp/B0GKDB1RTY/?tag=baronvonhag0c-21)
+- [Raspberry Pi 5 (8GB)](https://www.amazon.co.uk/dp/B0CK2FCG1K/?tag=baronvonhag0c-21)
+- [Cat6A Ethernet Cable (10m)](https://www.amazon.co.uk/dp/B07KVGPVXG/?tag=baronvonhag0c-21)
+- [USB Gigabit Ethernet Adapter](https://www.amazon.co.uk/dp/B00MYT481C/?tag=baronvonhag0c-21)
+
 Once your server is up, the only cost is power.
