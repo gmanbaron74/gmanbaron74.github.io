@@ -32,10 +32,28 @@ Don't overthink this. You need:
 **Recommended Hardware:**
 
 - **Beelink ME Mini** (~£369): Intel N150, 12GB LPDDR5, 6x M.2 NVMe slots, silent fan cooling. This is what I run. Runs at ~40°C idle, uses ~15W under load
-- **Raspberry Pi 5** (~$150): If you're budget-conscious, the Pi 5 with 8 GB RAM and a proper SSD enclosure works, but it's more constrained
-- **Old Intel NUC** (~$100–$200 used): Small form factor, good CPU performance, but you'll need to add RAM and storage
+- **[Raspberry Pi 5 (8GB)](https://www.amazon.co.uk/dp/B0CK2FCG1K/?tag=baronvonhag0c-21)** (~£70): If you're budget-conscious, the Pi 5 with 8 GB RAM and a proper SSD enclosure works, but it's more constrained
+- **Old Intel NUC** (~£80–£150 used): Small form factor, good CPU performance, but you'll need to add RAM and storage
 
 For this guide, I'm using a Beelink ME Mini, but the setup works identically on any x86 hardware.
+
+## Storage: The Honest Numbers
+
+The Beelink ME Mini has 6x M.2 NVMe slots, which sounds amazing until you price it up. Populating all six with [Crucial P310 2TB drives](https://www.amazon.co.uk/dp/B0DC8RVRBZ/?tag=baronvonhag0c-21) at ~£229 each comes to roughly **£1,374 in storage alone**, on top of the £369 for the machine itself. That's a £1,743 all-in number. Not going to pretend that's cheap.
+
+The good news: you don't have to fill it all at once.
+
+**Start small — 2 drives (~£458):**
+Two 2TB drives gives you 4TB, which is plenty for most home setups. Plex metadata, Home Assistant, a music library, and Docker configs will barely dent it. Add drives when you actually need the space, not because the slots are there.
+
+**Mid-range — 4 drives (~£916):**
+8TB covers a serious media library. If you're storing 4K rips, this is the sweet spot before the cost starts feeling painful.
+
+**Full population — 6 drives (~£1,374):**
+12TB of NVMe flash storage. Fast, silent, no spinning disks. If you know you need it, you know. Worth noting though — six populated NVMe slots will push the ME Mini's 25W TDP hard. The N150 has limited PCIe lanes, meaning the drives share bandwidth, and thermals under sustained load will be higher than a lightly populated build. I wouldn't run six drives without monitoring temperatures closely, and I'd make sure airflow around the unit isn't restricted. Populate with caution.
+
+**Budget alternative:**
+If Gen4 speeds don't matter for your use case (and on a NAS they often don't), the [Crucial P3 2TB](https://www.amazon.co.uk/dp/B0B25MXCMK/?tag=baronvonhag0c-21) is slower but meaningfully cheaper. For bulk media storage you'll never notice the difference.
 
 ## Installing ZimaOS
 
