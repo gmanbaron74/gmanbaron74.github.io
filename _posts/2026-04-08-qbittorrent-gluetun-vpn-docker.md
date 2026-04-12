@@ -360,8 +360,6 @@ If you're shopping for a mini PC or network gear:
 
 qBittorrent + Gluetun + Docker is a rock-solid combination. Once you've got it running, it just works—silent, reliable, private. The kill switch gives you peace of mind. The logs tell you when something breaks.
 
-One last thing: **respect copyright.** Use this setup for Linux ISOs, open-source projects, and public domain content. Everything else is between you and your conscience.
-
 Happy downloading.
 
 ---
