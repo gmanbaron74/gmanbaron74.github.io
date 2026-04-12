@@ -2,7 +2,7 @@
 
 The cloud-first smart home market wants you dependent—reliant on vendor APIs, cloud subscriptions, and data centers halfway across the world. Your home should be smarter than that. If you're tired of waiting for cloud servers to respond, worried about what happens to your privacy, or simply want control over your own infrastructure, it's time to build a local-first home automation stack on ZimaOS.
 
-This guide walks you through setting up a production-ready ZimaOS server, from hardware selection through running a complete media and automation ecosystem locally. I've done this on actual hardware (a Beelink SER5 running in Renfrew, Scotland), so every command and configuration here has been tested.
+This guide walks you through setting up a production-ready ZimaOS server, from hardware selection through running a complete media and automation ecosystem locally. I've done this on actual hardware (a Beelink ME Mini running in Renfrew, Scotland), so every command and configuration here has been tested.
 
 ## What is ZimaOS? And Why You Actually Want It
 
@@ -31,11 +31,11 @@ Don't overthink this. You need:
 
 **Recommended Hardware:**
 
-- **Beelink SER5 Pro** (~$280–$350): 5-core CPU, 16 GB RAM, 512 GB SSD, completely fanless. This is what I run. Specs: Ryzen 5 5500U, runs at ~45°C idle, uses ~20W under load
+- **Beelink ME Mini** (~£369): Intel N150, 12GB LPDDR5, 6x M.2 NVMe slots, silent fan cooling. This is what I run. Runs at ~40°C idle, uses ~15W under load
 - **Raspberry Pi 5** (~$150): If you're budget-conscious, the Pi 5 with 8 GB RAM and a proper SSD enclosure works, but it's more constrained
 - **Old Intel NUC** (~$100–$200 used): Small form factor, good CPU performance, but you'll need to add RAM and storage
 
-For this guide, I'm using a Beelink SER5 Pro, but the setup works identically on any x86 hardware.
+For this guide, I'm using a Beelink ME Mini, but the setup works identically on any x86 hardware.
 
 ## Installing ZimaOS
 
@@ -339,7 +339,7 @@ Copy that backup file to another machine. You'll be glad you did.
 
 You now have a private, local-first home infrastructure running on real hardware in your home. Your data isn't leaving town. Your services work offline. You own the entire stack.
 
-The Beelink SER5 I'm running pulls ~20W under load and costs about $350. After 18 months, the cost-per-month is less than what you'd pay for a single cloud subscription. After three years, it's paid for itself a hundred times over.
+The Beelink ME Mini I'm running pulls ~15W under load and costs £369. After 18 months, the cost-per-month is less than what you'd pay for a single cloud subscription. After three years, it's paid for itself a hundred times over.
 
 The beauty of this setup? It scales. Start with Home Assistant and Plex. Add qBittorrent later. Throw in Nextcloud for file sync. Run a custom Python bot. The infrastructure you've just built can handle whatever you add next.
 
@@ -348,11 +348,11 @@ Stop renting your home from the cloud. Build it yourself.
 ---
 
 **Hardware used in this guide:**
-- Beelink SER5 Pro: ~$350
-- 512 GB SSD (included)
-- 16 GB RAM (included)
-- Ethernet cable: $5
-- **Total: ~$355 one-time**
+- Beelink ME Mini: ~£369
+- 6x M.2 NVMe slots (storage separate)
+- 12 GB LPDDR5 RAM (included)
+- Ethernet cable: ~£5
+- **Total: ~£374 one-time**
 
 **Services running:**
 - Home Assistant (free)
