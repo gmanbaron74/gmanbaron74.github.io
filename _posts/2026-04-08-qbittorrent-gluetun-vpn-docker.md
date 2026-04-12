@@ -12,7 +12,7 @@ The real win? **Kill switch built in.** If the VPN drops, qBittorrent stops conn
 
 ## What You'll Need
 
-- **Hardware:** Any machine running Docker. A Raspberry Pi 5, a Beelink mini PC (£150–£250), or even an old laptop works fine. I'm running this on a Beelink SER5 with 8GB RAM—specs listed below.
+- **Hardware:** Any machine running Docker. A Raspberry Pi 5, a Beelink mini PC (£150–£250), or even an old laptop works fine. I'm running this on a Beelink ME Mini with 12GB RAM—specs listed below.
 - **Software:** Docker and Docker Compose (pre-installed on most NAS platforms like TrueNAS, Unraid, ZimaOS).
 - **VPN provider:** Mullvad (free, no account needed), ProtonVPN, Windscribe, or similar. Must support port forwarding if you want incoming connections.
 - **Time investment:** About 30 minutes to get it running, including verification.
@@ -318,7 +318,7 @@ I'm running this on a **Beelink SER5** (AMD Ryzen 5 5500U, 16GB RAM, 512GB SSD).
 Budget options:
 - **Raspberry Pi 5 (8GB):** ~£70, slow but silent
 - **Used mini PC (eBay):** ~£100–£200, good balance
-- **Beelink SER5:** ~£250, solid all-rounder
+- **Beelink ME Mini:** ~£250, solid all-rounder
 
 ## Maintenance and Monitoring
 
@@ -351,8 +351,8 @@ Then visit `http://your-ip:19999` for real-time stats.
 
 If you're shopping for a mini PC or network gear:
 
-- [Beelink SER5 Mini PC](https://www.amazon.co.uk/dp/B0DRF6N8Q9/?tag=baronvonhag0c-21)
-- [Raspberry Pi 5 (8GB)](https://www.amazon.co.uk/dp/B0BWMKXWBN/?tag=baronvonhag0c-21)
+- [Beelink ME Mini (Intel N150, 12GB, 6x M.2)](https://www.amazon.co.uk/dp/B0GKDB1RTY/?tag=baronvonhag0c-21)
+- [Raspberry Pi 5 (8GB)](https://www.amazon.co.uk/dp/B0CK2FCG1K/?tag=baronvonhag0c-21)
 - [Cat6A Ethernet Cable (10m)](https://www.amazon.co.uk/dp/B07KVGPVXG/?tag=baronvonhag0c-21)
 - [USB Gigabit Ethernet Adapter](https://www.amazon.co.uk/dp/B00MYT481C/?tag=baronvonhag0c-21)
 
