@@ -308,7 +308,7 @@ Confirm port `8080` is mapped. If you changed the port in `docker-compose.yml`, 
 
 ## Hardware: What You Actually Need
 
-I'm running this on a **Beelink SER5** (AMD Ryzen 5 5500U, 16GB RAM, 512GB SSD). Costs around £250–£350. For qBittorrent + Gluetun, specs are modest:
+I'm running this on a **Beelink ME Mini** (Intel N150, 12GB LPDDR5, 6x M.2 NVMe slots). Costs around £369. For qBittorrent + Gluetun, specs are modest:
 
 - **CPU:** Any modern multi-core processor. Even a Raspberry Pi 4 works, though speeds max out around 30–50 MB/s.
 - **RAM:** 2GB minimum; 4GB is comfortable.
