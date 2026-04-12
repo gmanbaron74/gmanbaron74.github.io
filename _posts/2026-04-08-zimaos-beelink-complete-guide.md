@@ -53,7 +53,7 @@ Two 2TB drives gives you 4TB, which is plenty for most home setups. Plex metadat
 12TB of NVMe flash storage. Fast, silent, no spinning disks. If you know you need it, you know. Worth noting though — six populated NVMe slots will push the ME Mini's 25W TDP hard. The N150 has limited PCIe lanes, meaning the drives share bandwidth, and thermals under sustained load will be higher than a lightly populated build. I wouldn't run six drives without monitoring temperatures closely, and I'd make sure airflow around the unit isn't restricted. Populate with caution.
 
 **Budget alternative:**
-If Gen4 speeds don't matter for your use case (and on a NAS they often don't), the [Crucial P3 2TB](https://www.amazon.co.uk/dp/B0B25MXCMK/?tag=baronvonhag0c-21) is slower but meaningfully cheaper. For bulk media storage you'll never notice the difference.
+If Gen4 speeds don't matter for your use case (and on a NAS they often don't), the [Crucial P3 2TB](https://www.amazon.co.uk/dp/B0CCN91GCY/?tag=baronvonhag0c-21) is slower but meaningfully cheaper. For bulk media storage you'll never notice the difference.
 
 ## Installing ZimaOS
 
@@ -382,7 +382,7 @@ Stop renting your home from the cloud. Build it yourself.
 
 **Cost comparison (per month):**
 - Cloud-dependent setup: ~$15–30/month (Home Assistant Cloud, Plex Pass, etc.)
-- Self-hosted setup: ~$0.50/month (electricity)
+- Self-hosted setup: ~£0.50/month (electricity)
 
 
 ## Amazon UK Hardware Links
