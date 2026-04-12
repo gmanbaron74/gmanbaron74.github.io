@@ -39,7 +39,7 @@ For this guide, I'm using a Beelink ME Mini, but the setup works identically on 
 
 ## Installing ZimaOS
 
-Head to [ZimaOS's official site](https://www.zimaos.com/) and download the ISO image. You'll need:
+Head to [ZimaOS's official site](https://www.zimaspace.com/zimaos/download) and download the ISO image. You'll need:
 
 - The ZimaOS ISO image
 - A USB stick (8 GB minimum)
