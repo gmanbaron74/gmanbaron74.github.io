@@ -16,7 +16,7 @@
     </section>
     <section class="main-content">
       <h1>{{ page.title }}</h1>
-      <p><em>{{ page.date | date: "%B %d, %Y" }}</em></p>
+      <p><em>{{ page.date | date: "%d/%m/%Y" }}</em></p>
       <hr>
       {{ content }}
       <footer class="site-footer">
@@ -25,5 +25,13 @@
         </span>
       </footer>
     </section>
+    <script>
+      document.querySelectorAll('a[href^="http"]').forEach(function(link) {
+        if (link.hostname !== window.location.hostname) {
+          link.setAttribute('target', '_blank');
+          link.setAttribute('rel', 'noopener noreferrer');
+        }
+      });
+    </script>
   </body>
 </html>
